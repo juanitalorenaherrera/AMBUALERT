@@ -1,0 +1,52 @@
+- proyecto
+    - css
+        - estilos.css
+    - img
+        - imagen1.jpg
+        - imagen2.png
+    - js
+        - scripts.js
+    - index.html
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Prototipo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Otros enlaces a scripts o estilos -->
+</head>
+<body>
+    <!-- Contenido de tu prototipo -->
+</body>
+</html>
+  
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+    </header>
+
+    <section id="contenido">
+        <article>
+            <!-- Contenido principal -->
+        </article>
+
+        <aside>
+            <!-- Barra lateral con información adicional -->
+        </aside>
+    </section>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+</body>
+</html>

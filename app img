@@ -1,0 +1,17 @@
+.header {
+  background-image: url('ruta/de/la/imagen.jpg');
+  background-size: cover;  /* Ajusta la imagen para cubrir completamente el área */
+  background-position: center; /* Centra la imagen */
+  height: 300px;  /* Ajusta la altura según tus necesidades */
+  text-align: center; /* Centra el contenido si es necesario */
+  color: #fff;  /* Ajusta el color del texto para que sea legible en la imagen */
+}
+   
+   <img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen">
+   
+   <div class="galeria">
+  <img src="ruta/de/imagen1.jpg" alt="Descripción 1">
+  <img src="ruta/de/imagen2.jpg" alt="Descripción 2">
+  <!-- Agrega más imágenes según sea necesario -->
+</div>
+   
