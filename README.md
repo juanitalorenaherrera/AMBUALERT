@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html> 
+      <head>
+            <title>ambualert</title>
+     </head>       
+
+     <body>
+          <h1>AMBUALERT</h1>
+          <p>EMERGENCIAS</p>
+
+          <button>LLAMAR</button>
+     </body>
+</html>
+
+         <button>PARAMEDICOS</button>
+
+          <button>USUARIOS</button>
+<html>
+<head>
+    <title>Mi Página Web</title>
+</head>
+<body>
+
+      
+</body>
+</html>
+
+      <h1>Usuario</h1>
+
+       <h1>contraseña</h1>
+
+       <h1>No DE CEDULA</h1>
+
+  </body>
+</html>
+
+         <button>REGISTRAR</button>
+</html>
+       </body>        
+</html>
+
+  </body>
+</html>
+      
+          <button>INICIAR SESION</button>  
+
+ </body>
+</html>   </body>  
+
+           <button>GOOGLE CUENTA </button>  
+ </body>
+</html>   </body> 
+
+            <button>APPLE CUENTA</button> 
+ </body>
+</html>   </body>  
+
+              <button>FACEBOOK CUENTA</button> 
+
+ </body>    </body>  
+ 
+</html> 
+
+
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Emergencias</title>
+    <style>
+        body {
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- Botón Decorativo -->
+    <a href="#" class="boton-decorativo">¡Haz clic aquí!</a>
+
+</body>
+</html>
+
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-info">
+        <h1>Información de Emergencia</h1>
+        <p>Esta página contiene información crucial en caso de emergencia.</p>
+        <div class="contact-numbers">
+            <h2>Números de Contacto</h2>
+            <p>Policía: 911</p>
+            <p>Asistencia Médica: 911</p>
+            <!-- Agrega más números de contacto según sea necesario -->
+        </div>
+    </div>
+
+    <!-- Agrega más secciones y contenido según tus necesidades -->
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
+ 
+        
+              <button>MODO OSCURO</button> 
+
+                <button>MODO CLARO</button> 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Estatura</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="estatura">Selecciona tu estatura:</label>
+        <select id="estatura" name="estatura">
+            <option value="150">150 cm</option>
+            <option value="160">160 cm</option>
+            <option value="170">170 cm</option>
+            <option value="180">180 cm</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <button onclick="mostrarEstatura()">Obtener Estatura</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+ 
+  
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Tipo de Sangre</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="tipoSangre">Selecciona tu tipo de sangre:</label>
+        <select id="tipoSangre" name="tipoSangre">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <button onclick="mostrarTipoSangre()">Obtener Tipo de Sangre</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+ 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Estado Civil</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="estadoCivil">Selecciona tu estado civil:</label>
+        <select id="estadoCivil" name="estadoCivil">
+            <option value="soltero">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+            <option value="divorciado">Divorciado/a</option>
+            <option value="viudo">Viudo/a</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <button onclick="mostrarEstadoCivil()">Obtener Estado Civil</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Peso</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="peso">Ingresa tu peso (kg):</label>
+        <input type="text" id="peso" name="peso" placeholder="Ej. 70">
+        <button onclick="mostrarPeso()">Obtener Peso</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Edad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="edad">Ingresa tu edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="Ej. 25">
+        <button onclick="mostrarEdad()">Obtener Edad</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Fecha de Nacimiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="fechaNacimiento">Ingresa tu fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        <button onclick="mostrarFechaNacimiento()">Obtener Fecha de Nacimiento</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Número de Cédula</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="numeroCedula">Ingresa tu número de cédula:</label>
+        <input type="text" id="numeroCedula" name="numeroCedula" placeholder="Ej. 123456789">
+        <button onclick="mostrarNumeroCedula()">Obtener Número de Cédula</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Tipo de Documento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="tipoDocumento">Selecciona tu tipo de documento:</label>
+        <select id="tipoDocumento" name="tipoDocumento">
+            <option value="cedula">Cédula de Identidad</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="licencia">Licencia de Conducir</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <button onclick="mostrarTipoDocumento()">Obtener Tipo de Documento</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrese Tipo y Número de Documento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="tipoDocumento">Selecciona tu tipo de documento:</label>
+        <select id="tipoDocumento" name="tipoDocumento">
+            <option value="cedula">Cédula de Identidad</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="licencia">Licencia de Conducir</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <label for="numeroDocumento">Ingresa tu número de documento:</label>
+        <input type="text" id="numeroDocumento" name="numeroDocumento" placeholder="Ej. 123456789">
+
+        <button onclick="mostrarTipoYNumeroDocumento()">Obtener Tipo y Número de Documento</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Fecha de Expedición</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="fechaExpedicion">Ingresa la fecha de expedición de tu documento:</label>
+        <input type="date" id="fechaExpedicion" name="fechaExpedicion">
+        <button onclick="mostrarFechaExpedicion()">Obtener Fecha de Expedición</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Nombre y Apellido</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. jorge">
+
+        <label for="apellido">Ingresa tu apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ej. ramos">
+
+        <button onclick="mostrarNombreYApellido()">Obtener Nombre y Apellido</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+                <p>&copy; 2024 Página de Emergencias | Desarrollado por [JUANITA HERRERA]</p>
