@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #111, #333);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.rojo {
+  background-color: #e53935;
+  color: white;
+}
+
+.azul {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.verde {
+  background-color: #43a047;
+  color: white;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.formulario input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.volver {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+.historial {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 400px;
+  text-align: left;
+  color: #ccc;
+}
+
+.historial li {
+  padding: 0.5rem;
+  background-color: #222;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50; /* verde suave */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMBUALERT </title>
+  <style>
+    /* === ESTILO GLOBAL === */
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #0b0b0b, #1a1a1a);
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: rgba(20, 20, 20, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    header h1 {
+      font-weight: 900;
+      color: #e53935;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #43a047;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    /* === SECCIÓN INICIO === */
+    .titulo {
+      font-size: 3rem;
+      color: #e53935;
+    }
+    .subtitulo {
+      color: #bbb;
+      margin-bottom: 2rem;
+    }
+    .botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .btn:hover { transform: scale(1.05); }
+    .rojo { background-color: #e53935; color: white; }
+    .azul { background-color: #1e88e5; color: white; }
+    .verde { background-color: #43a047; color: white; }
+
+    /* === SECCIÓN SALUD MENTAL === */
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #43a047;
+      margin-bottom: 1rem;
+    }
+    p { color: #ccc; line-height: 1.6; }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    /* === PANEL PARAMÉDICO === */
+    .historial {
+      list-style: none;
+      padding: 0;
+      max-width: 500px;
+      margin: 1rem auto;
+      text-align: left;
+      color: #ccc;
+    }
+    .historial li {
+      background: #222;
+      padding: 0.7rem;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+    }
+
+    /* === FORMULARIOS === */
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 350px;
+      margin: 1rem auto;
+    }
+    .formulario input, select {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+    }
+
+    /* === ANIMACIONES === */
+    .fade { animation: fadeIn 0.8s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚨 AMBUALERT </h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#emergencias">Emergencias</a>
+      <a href="#salud-mental">Salud Mental</a>
+      <a href="#paramedico">Panel Paramedic@</a>
+      <a href="#login">Login</a>
+      <a href="#registro">Registro</a>
+    </nav>
+  </header>
+
+  <!-- === INICIO === -->
+  <section id="inicio" class="container fade">
+    <h1 class="titulo">AMBUALERT 🚑</h1>
+    <p class="subtitulo">Tu red integral de emergencias médicas y apoyo mental</p>
+    <div class="botones">
+      <button class="btn rojo" onclick="lanzarEmergencia()">LLAMAR</button>
+      <button class="btn azul" onclick="scrollToSection('login')">INICIAR SESIÓN</button>
+      <button class="btn verde" onclick="scrollToSection('registro')">REGISTRAR</button>
+      <button class="btn azul" onclick="scrollToSection('paramedico')">PANEL PARAMÉDICO</button>
+    </div>
+  </section>
+
+  <!-- === EMERGENCIAS + SALUD MENTAL === -->
+  <section id="emergencias" class="fade">
+    <h2>🧠 Emergencias + Salud Mental</h2>
+    <div class="card">
+      <h3>Primeros Auxilios Psicológicos</h3>
+      <ul>
+        <li>Respira junto a la persona, valídala y transmite calma.</li>
+        <li>Evalúa riesgos: ideas suicidas, dolor físico, desmayo o sustancias.</li>
+        <li>Ancla al presente con el método 5-4-3-2-1.</li>
+        <li>Define próximos pasos claros y breves.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Ejercicio de Respiración 4–4–4–4</h3>
+      <p>Inhala 4s, retén 4s, exhala 4s, pausa 4s. Repite varias veces.</p>
+      <button class="btn verde" onclick="respirar()">Iniciar Respiración</button>
+    </div>
+  </section>
+
+  <!-- === SECCIÓN “TU MENTECUIDADO” === -->
+  <section id="salud-mental" class="fade">
+    <h2>💚 Tu Mentecuidado</h2>
+    <div class="card">
+      <h3>Ansiedad</h3>
+      <p>Palpitaciones, insomnio, pensamientos acelerados. Aprende a reconocer y manejar los síntomas con ejercicios de respiración y rutina saludable.</p>
+    </div>
+    <div class="card">
+      <h3>Esquizofrenia</h3>
+      <p>Un trastorno complejo que puede incluir alucinaciones y cambios en la motivación. El apoyo familiar y el tratamiento constante hacen la diferencia.</p>
+    </div>
+    <div class="card">
+      <h3>Autocuidado</h3>
+      <ul>
+        <li>Duerme bien, come real y conéctate con tus afectos.</li>
+        <li>Evita la sobreexposición digital.</li>
+        <li>Pide ayuda si los síntomas persisten.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- === PANEL PARAMÉDICO === -->
+  <section id="paramedico" class="fade">
+    <h2>🩺 Panel Paramedic@</h2>
+    <p>Alertas recientes:</p>
+    <ul id="lista-alertas" class="historial"></ul>
+    <button class="btn azul" onclick="volverInicio()">← Volver</button>
+  </section>
+
+  <!-- === LOGIN === -->
+  <section id="login" class="fade">
+    <h2>Iniciar Sesión</h2>
+    <form class="formulario" onsubmit="login(event)">
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button class="btn azul" type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <!-- === REGISTRO === -->
+  <section id="registro" class="fade">
+    <h2>Registrar Usuario</h2>
+    <form class="formulario" onsubmit="registrar(event)">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <select id="rol">
+        <option value="usuario">Usuario</option>
+        <option value="paramedico">Paramédico</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button class="btn verde" type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 AMBUALERT  — Sistema integral de emergencias y salud mental.  
+    <br>Hecho con ❤️ y empatía en Colombia.
+  </footer>
+
+  <script>
+    // === FUNCIONES PRINCIPALES ===
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+
+    function lanzarEmergencia() {
+      alert("🚨 Emergencia enviada. Contactando a servicios locales...");
+      const ahora = new Date().toLocaleString();
+      const historial = JSON.parse(localStorage.getItem('historialAmbualert')) || [];
+      historial.push(`Emergencia registrada: ${ahora}`);
+      localStorage.setItem('historialAmbualert', JSON.stringify(historial));
+      mostrarAlertas();
+    }
+
+    function mostrarAlertas() {
+      const historial = JSON.parse(localStorage.getItem('historialAmbualert')) || [];
+      const lista = document.getElementById('lista-alertas');
+      lista.innerHTML = '';
+      historial.slice().reverse().forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        lista.appendChild(li);
+      });
+    }
+    function volverInicio() {
+      scrollToSection('inicio');
+    }
+
+    function respirar() {
+      alert("🌬 Inhala 4s… retén 4s… exhala 4s… pausa 4s… repite calmadamente.");
+    }
+
+    function login(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('password').value;
+      alert(`Bienvenido ${email}, acceso concedido ✅`);
+    }
+
+    function registrar(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const correo = document.getElementById('correo').value;
+      const rol = document.getElementById('rol').value;
+      alert(`Usuario ${nombre} registrado como ${rol}. ✅`);
+    }
+
+    // Mostrar alertas al cargar
+    mostrarAlertas();
+  </script>
+</body>
+</html>
